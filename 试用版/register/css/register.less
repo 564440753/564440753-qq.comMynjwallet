@@ -1,0 +1,80 @@
+@blue: #0084ec;
+@orange: #fd9040;
+@title: #333;
+@describe: #666;
+@alert: #999;
+@line: #ddd;
+@bg: #f5f5f5;
+body {
+    background-color: @bg;
+}
+//注册首页
+.indextit {
+    height: 1.36rem;
+    line-height: 1.36rem;
+    font-size: 0.4rem;
+    text-align: center;
+}
+
+.ul_box {
+    margin: 0 0.25rem;
+    overflow: hidden;
+    li {
+        width: 49.9%;
+        height: 3.9rem;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin-bottom: 0.25rem;
+        &:nth-child(odd) {
+            float: left;
+            padding-right: 0.125rem;
+        }
+        &:nth-child(even) {
+            float: right;
+            padding-left: 0.125rem;
+        }
+    }
+    .li_box {
+        background-color: #fff;
+        height: 3.9rem;
+        display: block;
+        i {
+            height: 1.5rem;
+            display: block;
+            margin-top: 0.75rem;
+        }
+        .bg1 {
+            background: url("../img/bg1.png") no-repeat center top;
+            background-size: 1.5rem;
+        }
+        .bg2 {
+            background: url("../img/bg2.png") no-repeat center top;
+            background-size: 1.5rem;
+        }
+        .bg3 {
+            background: url("../img/bg3.png") no-repeat center top;
+            background-size: 1.5rem;
+        }
+        .bg4 {
+            background: url("../img/bg4.png") no-repeat center top;
+            background-size: 1.5rem;
+        }
+        span {
+            margin-top: 0.4rem;
+            display: block;
+            text-align: center;
+            font-size: 0.43rem;
+            line-height: 1;
+        }
+        b {
+            margin-top: 0.15rem;
+            display: block;
+            text-align: center;
+            font-weight: normal;
+            color: @alert;
+            font-size: 0.31rem;
+            line-height: 1;
+        }
+    }
+}
